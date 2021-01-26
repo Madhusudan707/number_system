@@ -9,7 +9,6 @@ let inputBox = document.querySelectorAll("input");
 function clickHandler() {
   for (let i = 0; i < inputBox.length; i++) {
     let textBoxValue = 0;
-    console.log(inputBox[i].id);
     textBoxValue = document.getElementById(inputBox[i].id).value;
 
     if (i == 0 && textBoxValue) {
@@ -22,13 +21,11 @@ function clickHandler() {
           case 1:
             base = 2;
             returnValue = BinaryToDecimal(textBoxValue, base);
-           alert(returnValue)
             document.getElementById("decimalInput").value = returnValue;
             break;
           case 2:
             base = 2;
             returnValue = BinaryToOctal(textBoxValue, base);
-            alert(returnValue)
             document.getElementById("octalInput").value = returnValue;
             break;
           case 3:
@@ -36,7 +33,6 @@ function clickHandler() {
             returnValue = BinaryToDecimal(textBoxValue, base);
             base = 16;
             returnValue = DecimalToBinary_Octal_hexaDecimal(returnValue, base);
-            alert(returnValue)
             document.getElementById("hexaDecimalInput").value = returnValue;
 
             break;
