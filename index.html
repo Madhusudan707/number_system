@@ -1,0 +1,33 @@
+.<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>NUMBER SYSTEM</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/main.css">
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        
+        <div class='container'>
+            <section>
+                <p>Binary<input type='text' placeholder="1001010" name='binaryInput' id ='binaryInput' class='inputBox'></p>
+                <p>Decimal<input type='text' placeholder="345" name='decimalInput' id ='decimalInput' class='inputBox'></p>
+                <p>Octal<input type='text' placeholder="127" name='octalInput' id ='octalInput' class='inputBox'></p>
+                <p>HexaDecimal<input type='text' placeholder="1C3" name='hexadecimalInput' id ='hexaDecimalInput' class='inputBox'></p>
+                <button id='convertor'>CONVERT</button>
+            </section>
+        </div>
+        <script type='module' src="js/convert.js" async defer></script>
+        <script type='module' src="js/utility.js" async defer></script>
+        
+    </body>
+</html>
